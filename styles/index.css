@@ -2,10 +2,24 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
 }
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 #nav {
     display: flex;
@@ -36,7 +50,6 @@ body{
 
     color: black;
     background-color: rgb(148, 148, 148);
-
 }
 
 .left-nav a:hover{
@@ -55,6 +68,20 @@ body{
 .right-nav a{
     text-decoration: none;
     color: rgb(3, 1, 1);
+}
+
+#fixed-nav{
+    display: none;
+    z-index: 1;
+    height: 60px;
+    position: fixed;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 12%;
+
+    animation-name: fade-in;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
 
 .hero {
@@ -77,7 +104,7 @@ body{
     text-align: center;
     color: rgb(255, 255, 255);
 
-
+    display: flex;
 }
 .content img{
     margin-left: 90px;
@@ -90,16 +117,48 @@ body{
 .content p {
     font-size: 16px;
 }
-#sub-content{
 
-}
 #sub-content a{
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
 
-    border: 1px solid rgba(255, 255, 255, 0.8)
+    text-decoration: none;
+    color: black;
 }
+
+.split{
+    background-color: rgb(115, 115, 115);
+    height: 50px;
+}
+
+#About{
+    background-image: url("../assets/coding_about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vw; /* Set the desired height for the div */
+    position: relative;
+}
+#AboutContent{
+    background-color: rgba(11, 11, 11, 0.8);
+    border-radius: 15px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    font-size: 20px;
+}
+
 /* Footer styles */
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
