@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #353535;
+    padding: 10px;
+}
+  
+.right-nav {
+    text-align: right;
+}
+  
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+  
+.left-nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 10px;;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.2s linear;
+
+    color: black;
+    background-color: rgb(148, 148, 148);
+
+}
+
+.left-nav a:hover{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.right-nav #header{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-left: 40px;
+    background-color: white;
+}
+.right-nav a{
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+}
+
+.hero {
+    background-image: url("../assets/coding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50em; /* Set the desired height for the div */
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 24px;
+}
+
+.content p {
+    font-size: 16px;
+}
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+  
+footer p {
+    font-size: 14px;
+}
