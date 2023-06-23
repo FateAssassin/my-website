@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muaz' Blog</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 <body>
 
@@ -30,7 +32,7 @@
         <div class="content">
             
             <div id="sub-content">
-                <h1>Hey, I am Muaz and<br> I am a Softwaredeveloper</h1>
+                <h1>Hey, I am Muaz and<br> I am a Softwaredeveloper</h1><br>
                 <a href="#About">About me</a>
                 <a href="#Projects">Projects</a>
                 <a href="#Contact">Contact</a>
@@ -69,12 +71,9 @@
     <div id="Contact">
         <div id="ContactContent">
             <h1>Contact me:</h1>
-            <form>
-                <input type="email" required placeholder="E-Mail"><br><br>
-                <input type="name" required placeholder="Name"><br><br>
-                <input type="Message" required placeholder="Message"><br><br>
-                <button type="submit">Send</button>     
-            </form>
+            <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-envelope"></span> Envelope 
+            </button>
         </div>
     </div>
 
@@ -84,6 +83,7 @@
 
 </body>
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="scripts/index.js"></script>
 
 </html>
