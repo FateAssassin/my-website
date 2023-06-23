@@ -186,6 +186,36 @@ body{
     font-size: 20px;
 }
 
+#Projects{
+    background-image: url("../assets/coding_projects.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vw; /* Set the desired height for the div */
+    position: relative;
+}
+#ProjectsContent{
+    background-color: rgba(11, 11, 11, 0.8);
+    border-radius: 15px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    font-size: 20px;
+}
+#Reconnect{
+    border: 1px solid rgb(231, 230, 230);
+    background-color: rgb(231, 230, 230);
+    color: black;
+    width: 400px;
+}
+
 /* Footer styles */
 footer {
     bottom: 0;
