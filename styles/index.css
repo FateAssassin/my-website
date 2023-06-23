@@ -210,6 +210,19 @@ body{
     font-size: 20px;
 }
 
+#Reconnect{
+    border: 1px solid rgb(231, 230, 230);
+    background-color: rgb(231, 230, 230);
+    color: black;
+    width: 400px;
+}
+#Crypto-Group{
+    border: 1px solid rgb(231, 230, 230);
+    background-color: rgb(231, 230, 230);
+    color: black;
+    width: 400px;
+}
+
 #Contact{
     background-image: url("../assets/handshake.jpg");
     background-repeat: no-repeat;
@@ -234,11 +247,10 @@ body{
     font-size: 20px;
 }
 
-#Reconnect{
-    border: 1px solid rgb(231, 230, 230);
-    background-color: rgb(231, 230, 230);
-    color: black;
-    width: 400px;
+#ContactContent a{
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
 }
 
 /* Footer styles */
